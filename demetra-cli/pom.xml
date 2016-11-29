@@ -15,6 +15,7 @@
         <module>demetra-cli-chart</module>
         <module>demetra-cli-sdmx</module>
         <module>demetra-cli-odbc</module>
+        <module>demetra-cli-dfm</module>
     </modules>
     
     <properties>
@@ -53,6 +54,13 @@
             <dependency>
                 <groupId>eu.europa.ec.joinup.sat</groupId>
                 <artifactId>demetra-utils</artifactId>
+                <version>${demetra.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>be.nbb.demetra</groupId>
+                <artifactId>demetra-tss2</artifactId>
                 <version>${demetra.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
